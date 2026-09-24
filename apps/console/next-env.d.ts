@@ -1,5 +1,9 @@
 /// <reference types="next" />
 /// <reference types="next/image-types/global" />
+import "./.next/dev/types/routes.d.ts";
+import "./.next/dev/types/root-params.d.ts";
+
+// NOTE: This file is maintained by Next.js.
 import "./.next/types/routes.d.ts";
 import "./.next/types/root-params.d.ts";
 
