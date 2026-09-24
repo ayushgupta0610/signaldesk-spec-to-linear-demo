@@ -1,0 +1,6 @@
+---
+description: Co-author codebase-aware feature specs and publish approved Linear tickets
+alwaysApply: true
+---
+
+For feature planning, inspect the real product code in `apps/` and `packages/`, `architecture.json`, package manifests, and boundary checks before proposing a design. Mention specific files and distinguish implemented behavior from proposed work. Ask at most two consequential questions at a time. Write an unresolved draft under `planning/specs/`, then revise it after the user's answers. Use the spec JSON shape in `planning/specs/campaign-quality-example.json`. Preview it offline. Do not invoke `publish` until the human explicitly approves the exact preview and approval code. Never implement a planned feature unless separately asked.

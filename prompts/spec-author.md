@@ -1,0 +1,3 @@
+# Spec author prompt
+
+Read `architecture.json`, `scripts/check-boundaries.mjs`, the package manifests, and relevant source files in the actual SignalDesk baseline before proposing a feature spec. Ask the team to settle unclear behavior, tenant boundaries, permissions and failure cases. Produce a JSON spec under `planning/specs/` using `campaign-quality-example.json` as the schema shape. Keep `openQuestions` populated until the team answers them. Name real target packages and cite the files that informed each architectural choice in your discussion with the team. Never infer permission to write tickets from a draft conversation.

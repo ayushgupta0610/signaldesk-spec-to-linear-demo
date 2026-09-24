@@ -1,0 +1,20 @@
+{
+  "featureId": "campaign-quality-format-example",
+  "projectName": "Campaign Quality Format Example — Do Not Publish",
+  "teamName": "Engineering",
+  "summary": "Example only: a possible campaign attribution quality panel, to show the JSON shape. In a real conversation, decisions and tickets should emerge from inspecting the baseline and asking the team.",
+  "decisions": ["This is a format example and must not be published as a live feature."],
+  "openQuestions": ["Which event types count as campaign landing events?", "Should the first version group findings by page, campaign, or both?"],
+  "tickets": [
+    {
+      "key": "attribution-rule",
+      "title": "Define attribution quality findings",
+      "package": "packages/analytics-domain",
+      "goal": "Represent quality findings separately from structural validation.",
+      "acceptance": ["Pure domain tests cover complete and missing attribution fields."],
+      "estimate": 3,
+      "labels": ["Feature"],
+      "dependsOn": []
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "packages": [
+    { "name": "apps/console", "kind": "Next.js App Router app", "mayDependOn": ["packages/analytics-domain", "packages/tenant-data", "packages/analytics-ui"] },
+    { "name": "packages/analytics-domain", "kind": "pure domain", "mayDependOn": [] },
+    { "name": "packages/tenant-data", "kind": "tenant-scoped data adapter", "mayDependOn": ["packages/analytics-domain"] },
+    { "name": "packages/analytics-ui", "kind": "presentational UI", "mayDependOn": ["packages/analytics-domain"] }
+  ],
+  "rules": [
+    "Resolve tenant identity at the app route before reading data; never accept a tenant ID from an event payload.",
+    "Keep analytics-domain free of Next.js, React, browser APIs, and data-access imports.",
+    "Keep analytics-ui presentational: no direct tenant-data or database imports.",
+    "Each ticket must target a real package, carry testable acceptance criteria, and call out tenant isolation where relevant."
+  ]
+}
